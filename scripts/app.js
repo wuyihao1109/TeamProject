@@ -1,5 +1,4 @@
 angular.module("myApp",["ionic","tabs.Ctrl","home.Ctrl"])
-// ,"home.Ctrl"
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -25,9 +24,9 @@ angular.module("myApp",["ionic","tabs.Ctrl","home.Ctrl"])
 		url:"/home",
 	  views: {
 	  	'tab-home': {
-	    templateUrl: './tpls/home.html',
-	    controller: 'homeCtrl'
- 		 }
+		    templateUrl: './tpls/home.html',
+		    controller: 'homeCtrl'
+   		 }
     }
 	})
 	.state("tab.discover",{
@@ -35,7 +34,7 @@ angular.module("myApp",["ionic","tabs.Ctrl","home.Ctrl"])
 		views:{
 			"tab-discover":{
 				templateUrl: './tpls/discover.html',
-	    	controller: 'disCtrl'
+	    		controller: 'disCtrl'
 			}
 		}
 	})
@@ -44,7 +43,17 @@ angular.module("myApp",["ionic","tabs.Ctrl","home.Ctrl"])
 		views:{
 			"tab-my":{
 				templateUrl: './tpls/my.html',
-	    	controller: 'myCtrl'
+	    		controller: 'myCtrl'
+			}
+		}
+	})
+	.state("tab.theme",{
+		url:"/home/theme",
+		cache:true,
+		views:{
+			"tab-home":{
+				templateUrl: './tpls/home-theme.html',
+	    		controller: 'themeCtrl'
 			}
 		}
 	});

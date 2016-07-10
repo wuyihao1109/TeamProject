@@ -1,0 +1,20 @@
+<ion-view view-title="" class="the-view">
+	<div class="bar bar-header bar-light view-tit">
+  		<a class="button button-light ion-ios-arrow-back backbtn" href="#/tab/home">
+		</a>
+  		<h1 class="title">特色主题</h1>
+  		<a class="button button-light ion-share sharebtn">
+		</a>
+	</div>
+
+ 
+  <ion-content class="padding content" scrollbar-y="false" on-refresh>
+   <ion-spinner icon="ios"></ion-spinner>
+    <ion-list class="list">
+      <ion-item ng-repeat="list in picList" class="li-item">
+         <img ng-src="{{list.head_pic}}" ng-click="modal.show()" alt="加载失败">
+          <p>{{list.title}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -9815,24 +9815,44 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+html {
+  font-size: 100px; }
+
+.the-view {
+  font-size: 12px; }
+  .the-view .view-tit {
+    height: 0.44rem; }
+    .the-view .view-tit .backbtn, .the-view .view-tit .sharebtn {
+      color: #d8bb99;
+      font-size: .26rem; }
+  .the-view .content {
+    text-align: center; }
+    .the-view .content .list {
+      width: 100%; }
+      .the-view .content .list .li-item {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        border: none;
+        width: 100%;
+        color: #616161; }
+        .the-view .content .list .li-item img {
+          width: 100%;
+          height: 2rem; }
+        .the-view .content .list .li-item p {
+          line-height: .2rem; }
+
 html, body {
   font-size: 100px; }
 
 .homeMain {
+  font-size: 12px;
   width: 100%;
   background: #f5f5f5; }
 
-.ht43 {
-  height: .43rem;
-  width: 100%; }
-
-.home-swiper {
-  height: 1.2rem;
+.home-swiper img {
   width: 100%;
-  background: red; }
-  .home-swiper img {
-    width: 100%;
-    height: 100%; }
+  height: 100%; }
 
 .home-tag {
   height: 1.9rem;

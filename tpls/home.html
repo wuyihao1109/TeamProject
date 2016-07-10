@@ -1,27 +1,25 @@
 <!-- 主页 -->
 <!-- 头部 -->
+<ion-view>		
 <div class="bar bar-header bar-light">
 	<h1 class="title">第一出行</h1>
 </div>
-<ion-content class="homeMain" ng-controller="homeCtrl">
+<ion-content class="homeMain has-header" ng-controller="homeCtrl" >
 	<!-- swiper -->
-	<div class="ht43"></div>
+	<!-- <div class="ht43"></div> -->
 	<div class="home-swiper">
-		<ion-slide-box active-slide="myActiveSlide" does-continue="true">
+		<ion-slide-box on-slide-changed="slideHasChanged($index)" does-continue="true">
 			<ion-slide>
-			  <img src="http://placehold.it/350x120" alt="">
+			  <img src="http:\/\/img3.handybest.com\/Uploads\/topic\/20160707\/14678872823911.jpg!phone" alt="">
 			</ion-slide>
 			<ion-slide>
-			  <img src="http://placehold.it/450x120" alt="">
+			  <img src="http:\/\/img3.handybest.com\/Uploads\/topic\/20160708\/14679336857445.jpg!phone" alt="">
 			</ion-slide>
 			<ion-slide>
-			  <img src="http://placehold.it/300x120" alt="">
+			  <img src="http:\/\/img1.handybest.com\/Uploads\/topic\/20160705\/14677197365036.jpg!phone" alt="">
 			</ion-slide>
 			<ion-slide>
-			  <img src="http://placehold.it/350x120" alt="">
-			</ion-slide>
-			<ion-slide>
-			  <img src="http://placehold.it/450x120" alt="">
+			  <img src="http:\/\/img2.handybest.com\/Uploads\/topic\/20160705\/14676993464411.jpg!phone" alt="">
 			</ion-slide>
 		</ion-slide-box>
 	</div>
@@ -81,7 +79,7 @@
 	<div class="main1 padding">
 		<h2><i></i>&nbsp;品质生活 · 触手可及</h2>
 		<div class="homeMainImg" ng-repeat="img in employee">
-			<img ng-src="{{img.url}}" class="aaa{{$index}}">
+			<a href="#/tab/home/theme"><img ng-src="{{img.url}}" class="aaa{{$index}}"></a>
 		</div>
 		<div class="homeMore" >
 			更多精彩主题&nbsp;<i class="icon ion-arrow-right-b"></i>
@@ -108,3 +106,4 @@
 		</div>
 	</div>
 </ion-content>
+</ion-view>
