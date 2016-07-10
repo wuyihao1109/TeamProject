@@ -1,4 +1,5 @@
-angular.module("myApp",["ionic","tabs.Ctrl"])
+angular.module("myApp",["ionic","tabs.Ctrl","home.Ctrl"])
+// ,"home.Ctrl"
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard

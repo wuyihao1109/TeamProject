@@ -1,5 +1,110 @@
-<ion-view view-title="Home">
-  <ion-content class="padding">
-    home.....
-  </ion-content>
-</ion-view>
+<!-- 主页 -->
+<!-- 头部 -->
+<div class="bar bar-header bar-light">
+	<h1 class="title">第一出行</h1>
+</div>
+<ion-content class="homeMain" ng-controller="homeCtrl">
+	<!-- swiper -->
+	<div class="ht43"></div>
+	<div class="home-swiper">
+		<ion-slide-box active-slide="myActiveSlide" does-continue="true">
+			<ion-slide>
+			  <img src="http://placehold.it/350x120" alt="">
+			</ion-slide>
+			<ion-slide>
+			  <img src="http://placehold.it/450x120" alt="">
+			</ion-slide>
+			<ion-slide>
+			  <img src="http://placehold.it/300x120" alt="">
+			</ion-slide>
+			<ion-slide>
+			  <img src="http://placehold.it/350x120" alt="">
+			</ion-slide>
+			<ion-slide>
+			  <img src="http://placehold.it/450x120" alt="">
+			</ion-slide>
+		</ion-slide-box>
+	</div>
+	<!-- input -->
+	<div class="home-tag">
+		<ul>
+		  <li>
+		  	<span>
+		  		<div style="background: #4ba6ff">
+		  			<i class="ion-ios-home-outline"></i>
+		  		</div>
+		  		<p>住民宿</p>
+		  	</span>
+		  </li>
+		  <li>
+		  	<span>
+		  		<div style="background: #ff5931">
+		  			<i class="ion-model-s"></i>
+		  		</div>
+		  		<p>要包车</p>
+		  	</span>
+		  </li>
+		  <li>
+		  	<span>
+		  		<div style="background: #ff4d99">
+		  			<i class="ion-android-hand"></i>
+		  		</div>
+		  		<p>找管家</p>
+		  	</span>
+		  </li>
+		  <li>
+		  	<span>
+		  		<div style="background: #30d394">
+		  			<i class="ion-ios-home-outline"></i>
+		  		</div>
+		  		<p>游景点</p>
+		  	</span>
+		  </li>
+		  <li>
+		  	<span>
+		  		<div style="background: #fdc818">
+		  			<i class="ion-fork"></i>
+		  		</div>
+		  		<p>吃美食</p>
+		  	</span>
+		  </li>
+		  <li>
+		  	<span>
+		  		<div style="background: #7369e6">
+		  			<i class="ion-android-bar"></i>
+		  		</div>
+		  		<p>去游乐</p>
+		  	</span>
+		  </li>
+	</div>
+	<!-- main1-->
+	<div class="main1 padding">
+		<h2><i></i>&nbsp;品质生活 · 触手可及</h2>
+		<div class="homeMainImg" ng-repeat="img in employee">
+			<img ng-src="{{img.url}}" class="aaa{{$index}}">
+		</div>
+		<div class="homeMore" >
+			更多精彩主题&nbsp;<i class="icon ion-arrow-right-b"></i>
+		</div>
+	</div>
+	<!-- main2-->
+	<div class="main1 padding">
+		<h2><i></i>&nbsp;品质生活 · 触手可及</h2>
+		<div class="homeMainImg" ng-repeat="img in employee">
+			<img ng-src="{{img.url}}" class="aaa{{$index}}">
+		</div>
+		<div class="homeMore" >
+			更多精彩主题&nbsp;<i class="icon ion-arrow-right-b"></i>
+		</div>
+	</div>
+	<!-- main3-->
+	<div class="main1 padding">
+		<h2><i></i>&nbsp;品质生活 · 触手可及</h2>
+		<div class="homeMainImg" ng-repeat="img in employee">
+			<img ng-src="{{img.url}}" class="aaa{{$index}}">
+		</div>
+		<div class="homeMore" >
+			更多精彩主题&nbsp;<i class="icon ion-arrow-right-b"></i>
+		</div>
+	</div>
+</ion-content>
